@@ -156,10 +156,10 @@ function RainfedBarChart({
             strokeDasharray="3 3"
           />
           <text
-            x={getX(2.1)}
+            x={getX(2.1) - 6}
             y={14}
-            textAnchor="middle"
-            className="fill-red-700 text-[10px] font-medium font-mono-tabular"
+            textAnchor="end"
+            className="fill-red-700 text-[10.5px] font-semibold font-mono-tabular"
           >
             Traditional 2.10
           </text>
@@ -173,10 +173,10 @@ function RainfedBarChart({
             strokeDasharray="3 3"
           />
           <text
-            x={getX(3.43)}
+            x={getX(3.43) + 6}
             y={14}
-            textAnchor="middle"
-            className="fill-[#14452F] text-[10px] font-medium font-mono-tabular"
+            textAnchor="start"
+            className="fill-[#14452F] text-[10.5px] font-semibold font-mono-tabular"
           >
             PhilRice Mean 3.43
           </text>
@@ -257,6 +257,9 @@ function RainfedBarChart({
               <text
                 x={pad.left + peakW + 8}
                 y={y + 22}
+                stroke={isSelected ? '#F0FDF4' : '#FFFFFF'}
+                strokeWidth={4}
+                paintOrder="stroke"
                 className="fill-slate-700 text-[11px] font-mono-tabular"
               >
                 {row.avgRainfedHarvestTha.toFixed(2)} / {row.highestPossibleHarvestTha.toFixed(2)}
