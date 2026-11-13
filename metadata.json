@@ -1,0 +1,8 @@
+{
+  "name": "Seeds of Survival",
+  "description": "Interactive agricultural analytics dashboard examining Filipino rice farmers' palay yield impact, drought-tolerant seed performance, and El Niño losses across major rice-producing regions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
